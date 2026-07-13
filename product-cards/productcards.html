@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Cards</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            background-color: white;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .card::before {
+            content: "SALE";
+            background-color: red;
+            color: white;
+            position: absolute;
+            padding: 5px;
+        }
+
+        .card:hover {
+            background-color: lightblue;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .discount {
+            background-color: orange;
+            padding: 5px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 8px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Products</h1>
+
+<div class="products">
+
+    <div class="card">
+        <img src="laptop.jpg">
+        <h2>Laptop</h2>
+        <p>Price: ₹50000</p>
+        <span class="discount">20% OFF</span><br>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="mobile.jpg">
+        <h2>Mobile</h2>
+        <p>Price: ₹25000</p>
+        <span class="discount">15% OFF</span><br>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="headphone.jpg">
+        <h2>Headphone</h2>
+        <p>Price: ₹2000</p>
+        <span class="discount">10% OFF</span><br>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="watch.jpg">
+        <h2>Watch</h2>
+        <p>Price: ₹5000</p>
+        <span class="discount">25% OFF</span><br>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="camera.jpg">
+        <h2>Camera</h2>
+        <p>Price: ₹40000</p>
+        <span class="discount">30% OFF</span><br>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="speaker.jpg">
+        <h2>Speaker</h2>
+        <p>Price: ₹3000</p>
+        <span class="discount">20% OFF</span><br>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>
