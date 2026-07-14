@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Destination Card</title>
+
+    <style>
+        .card {
+            width: 300px;
+            margin: 50px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card::before {
+            content: "POPULAR";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            background-color: lightblue;
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="paris.jpg" alt="Paris">
+
+        <h2>Paris</h2>
+
+        <p>
+            Paris is a beautiful city famous for the Eiffel Tower
+            and its amazing culture.
+        </p>
+
+        <button>Visit</button>
+
+    </div>
+
+</body>
+</html>
